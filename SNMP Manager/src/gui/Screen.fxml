@@ -15,6 +15,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="615.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ScreenController">
    <children>
@@ -54,5 +55,11 @@
           </Menu>
         </menus>
       </MenuBar>
+
+      <VBox fx:id="performanceBox" layoutX="780.0" layoutY="500.0" spacing="5" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-text-fill: white; -fx-padding: 10;">
+         <Label fx:id="fpsLabel" text="FPS: " />
+         <Label fx:id="memoryLabel" text="Memory: " />
+         <Label fx:id="cpuLabel" text="CPU: " />
+      </VBox>
    </children>
 </AnchorPane>

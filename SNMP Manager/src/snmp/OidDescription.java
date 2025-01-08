@@ -17,7 +17,7 @@ public class OidDescription {
         String output = "";
         ProcessBuilder processBuilder = new ProcessBuilder();
         // Windows
-        processBuilder.command("cmd.exe", "/c", "snmptranslate -Td " + this.oid);
+        processBuilder.command("cmd.exe", "/c", "C:/usr/bin/snmptranslate -Td " + this.oid);
         try {
 
             Process process = processBuilder.start();
